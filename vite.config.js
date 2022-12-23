@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue2";
+import vitePluginPrintName from "./plugin/vite-plugin-print-name";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,5 +10,5 @@ export default defineConfig({
   server: {
     port: 5173, // 默认端口是 5173
   },
-  plugins: [vue()],
+  plugins: [vue(), vitePluginPrintName()],
 });
